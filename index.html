@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>curriculum</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4303efd585.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <img src = "https://randomuser.me/api/portraits/men/24.jpg" alt = "foto de frente"/>
+    <h1 id = "Nombre"></h1>
+
+    <div id = "botones">
+        <button type = button id = "boton_inf"> Informacion Personal </button>
+        <button type = button id = "boton_exp"> Experiencia </button>
+        <button type = button id = "boton_hab"> Educacion </button>
+    </div>
+
+        <span class="oculto" id="ocultar_inf">
+            <h2>Informacion Personal <i class="fa-sharp fa-solid fa-user-tie fa-5x"></i> </h2>
+            <p id = "Edad"></p>
+            <p id = "Direccion"></p>
+            <p id = "CodigoPostal"></p>
+            <p id = "Email"></p>
+            <p id = "Telefono"></p>
+        </span>
+
+        <span class="oculto" id="ocultar_exp">
+                <h2>Experiencia Profesional <i class="fa-sharp fa-solid fa-briefcase fa-5x"></i> </h2>
+            <div class = "grid-container">
+                <div>
+                    <h3>Independiente</h3>
+                    <p>Febrero 2010 a Enero 2014</p>
+                </div>
+                <div>
+                    <p>&nbsp</p>
+                    <p><u>Electricista domiciliario matriculado</u></p>
+                    <p>Tareas relacionadas: Instalación y mantenimiento de instalaciones eléctricas de baja tensión en domicilios, obras nuevas y pequeñas empresas</p>
+                </div>
+            </div>
+            <div class = "grid-container">
+                <div>
+                    <h3>Edenor</h3>
+                    <p>01/03/2014 al 31/05/2017</p>
+                    <p id="sinmargeninf">&nbsp</p>
+                    <p id="sinmargensup">&nbsp</p>
+                    <p>01/06/2017 al 31/01/2020</p>
+                </div>
+                <div>
+                    <p>&nbsp</p>
+                    <p><u>Cargo: operario</u></p>
+                    <p>Tareas relacionadas: Mantenimiento de instalaciones eléctricas de media y alta tensión en CABA y Provinicia de Buenos Aires</p>
+                    <p><u>Cargo: supervisor regional</u></p>
+                    <p>Tareas relacionadas: Supervisión de instalaciones eléctricas de media y alta tensión en CABA</p>
+                </div>
+            </div>
+            <div class = "grid-container">
+                <div>
+                    <h3>Genneia</h3>
+                    <p>01/02/2020 hasta actualidad</p>
+                </div>
+                <div>
+                    <p>&nbsp</p>
+                    <p><u>Cargo: diseñador de instalciones eléctricas</u></p>
+                    <p>Tareas relacionadas: diseño y puesta en producción de instalaciones de transpote de eneregía eléctrica de fuentes de energía renovable</p>
+                </div>
+            </div>    
+        </span>
+
+        <span class="oculto" id="ocultar_hab">
+            <h2>Educacion <i class="fa-sharp fa-solid fa-user-graduate fa-5x"></i> </h2>
+            <div class = "grid-container">
+                <div>
+                    <h3>Año: 2009</h3>
+                </div>
+                <div>
+                    <h4>Instituto Politécnico Modelo</h4>
+                    <p>Título: Técnico superior electricista</p>
+                </div>
+            </div>
+            <div class = "grid-container">
+                <div>
+                    <h3>Año: 2019</h3>
+                </div>
+                <div>
+                    <h4>Universidad Tecnológica Nacional</h4>
+                    <p>Título: Diseñador técnico e industrial</p>
+                </div>
+            </div>
+            <div class = "grid-container">
+                <div>
+                    <h3>Idiomas</h3>
+                </div>
+                <div>
+                    <h4>Español - Idioma nativo</h4>
+                </div>
+                <div>
+                    <p>&nbsp</p>
+                </div>
+                <div>
+                    <h4>Alemán - nivel avanzado</h4>
+                    <p>Año: 2009 , 2011 - Deutches Sprachdiplom I y II</p>
+                </div>
+                <div>
+                    <p>&nbsp</p>
+                </div>
+                <div>
+                    <h4>Inglés - nivel avanzado</h4>
+                    <p>Año: 2012 - First Certificate</p>
+                </div>
+            </div>
+            <div class = "grid-container">
+                <div>
+                    <h3>Informática, <br> Programación</h3>
+                </div>
+                <div>
+                    <h4>Microsoft Office</h4>
+                    <h4>Visual Basic for Applications</h4>
+                    <h4>SQL</h4>
+                    <h4>Corel Draw</h4>
+                    <h4>Autocad</h4>
+                </div>
+            </div>
+        </span>
+
+    <script src = "index.js"></script>
+
+</body>
+</html>
