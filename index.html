@@ -17,17 +17,22 @@
 </head>
 <body>
 
+    <div class="header">
+        <h1 id = "Nombre"></h1>
+    </div>
+
     <img src = "https://randomuser.me/api/portraits/men/24.jpg" alt = "foto de frente"/>
-    <h1 id = "Nombre"></h1>
 
     <div id = "botones">
-        <button type = button id = "boton_inf"> Informacion Personal </button>
+        <button type = button id = "boton_inf"> Informacion </button>
         <button type = button id = "boton_exp"> Experiencia </button>
         <button type = button id = "boton_hab"> Educacion </button>
+        <button type = button id = "boton_con"> Contacto </button>
     </div>
 
         <span class="oculto" id="ocultar_inf">
-            <h2>Informacion Personal <i class="fa-sharp fa-solid fa-user-tie fa-5x"></i> </h2>
+            <i class="fa-sharp fa-solid fa-user-tie fa-3x"></i> 
+            <h2>Informacion Personal</h2> 
             <p id = "Edad"></p>
             <p id = "Direccion"></p>
             <p id = "CodigoPostal"></p>
@@ -36,11 +41,12 @@
         </span>
 
         <span class="oculto" id="ocultar_exp">
-                <h2>Experiencia Profesional <i class="fa-sharp fa-solid fa-briefcase fa-5x"></i> </h2>
+            <i class="fa-sharp fa-solid fa-briefcase fa-3x"></i>
+            <h2>Experiencia Profesional</h2>
             <div class = "grid-container">
                 <div>
                     <h3>Independiente</h3>
-                    <p>Febrero 2010 a Enero 2014</p>
+                    <p class="fecha">Febrero 2010 a Enero 2014</p>
                 </div>
                 <div>
                     <p>&nbsp</p>
@@ -51,10 +57,10 @@
             <div class = "grid-container">
                 <div>
                     <h3>Edenor</h3>
-                    <p>01/03/2014 al 31/05/2017</p>
+                    <p class="fecha">01/03/2014 al 31/05/2017</p>
                     <p id="sinmargeninf">&nbsp</p>
                     <p id="sinmargensup">&nbsp</p>
-                    <p>01/06/2017 al 31/01/2020</p>
+                    <p class="fecha">01/06/2017 al 31/01/2020</p>
                 </div>
                 <div>
                     <p>&nbsp</p>
@@ -67,7 +73,7 @@
             <div class = "grid-container">
                 <div>
                     <h3>Genneia</h3>
-                    <p>01/02/2020 hasta actualidad</p>
+                    <p class="fecha">01/02/2020 hasta actualidad</p>
                 </div>
                 <div>
                     <p>&nbsp</p>
@@ -78,7 +84,8 @@
         </span>
 
         <span class="oculto" id="ocultar_hab">
-            <h2>Educacion <i class="fa-sharp fa-solid fa-user-graduate fa-5x"></i> </h2>
+            <i class="fa-sharp fa-solid fa-user-graduate fa-3x"></i> 
+            <h2>Educacion</h2>
             <div class = "grid-container">
                 <div>
                     <h3>Año: 2009</h3>
@@ -130,6 +137,44 @@
                     <h4>Corel Draw</h4>
                     <h4>Autocad</h4>
                 </div>
+            </div>
+        </span>
+
+        <span class="oculto" id="ocultar_con">
+            <i class="fa-sharp fa-solid fa-id-card fa-3x"></i> 
+            <h2>Contacto</h2>
+            <div id="consulta">
+                <h3 id="consulta">Realice su consulta y a la brevedad me pondre en contacto con usted</h3>
+            </div>
+            <div id="formulario">
+            <form action="" method="get">
+                <p class="formulario">
+                    <label>Nombre</label>
+                    <input type="text" size="30" name="Nombre" required/>
+                </p>
+                <p class="formulario">
+                    <label>Apellido</label>
+                    <input type="text" size="30" name="Apellido" required/>
+                </p>
+                <p class="formulario">
+                    <label>Empresa</label>
+                    <input type="text" size="30" name="Empresa" required/>
+                </p>
+                <p class="formulario">
+                    <label>Telefono</label>
+                    <input type="phone" size="30" name="Telefono" required/>
+                </p>
+                <p class="formulario">
+                    <label>E-mail</label>
+                    <input type="email" size="30" name="Email" required/>
+                </p>
+                <p class="formulario">
+                    <label>Consulta</label>
+                    <textarea rows="5" cols="30" placeholder="Ingrese el motivo de la consulta" name="consulta" required></textarea>
+                </p>
+                <input type="submit" value="Enviar">
+                <p></p>
+            </form>
             </div>
         </span>
 

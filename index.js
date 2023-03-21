@@ -21,6 +21,7 @@ function MostrarInf () {
     document.getElementById('ocultar_inf').style.display = 'block';
     document.getElementById('ocultar_exp').style.display = 'none';
     document.getElementById('ocultar_hab').style.display = 'none';
+    document.getElementById('ocultar_con').style.display = 'none';
 }
 
 let boton_exp = document.getElementById('boton_exp');
@@ -28,9 +29,10 @@ let ocultar_exp = document.getElementById('ocultar_exp');
 boton_exp.addEventListener ('click', MostrarExp);
 
 function MostrarExp () {
-    document.getElementById('ocultar_exp').style.display = 'block';
     document.getElementById('ocultar_inf').style.display = 'none';
+    document.getElementById('ocultar_exp').style.display = 'block';
     document.getElementById('ocultar_hab').style.display = 'none';
+    document.getElementById('ocultar_con').style.display = 'none';
 }
 
 let boton_hab = document.getElementById('boton_hab');
@@ -38,9 +40,21 @@ let ocultar_hab = document.getElementById('ocultar_hab');
 boton_hab.addEventListener ('click', MostrarHab);
 
 function MostrarHab () {
-    document.getElementById('ocultar_hab').style.display = 'block';
     document.getElementById('ocultar_inf').style.display = 'none';
     document.getElementById('ocultar_exp').style.display = 'none';
+    document.getElementById('ocultar_hab').style.display = 'block';
+    document.getElementById('ocultar_con').style.display = 'none';
+}
+
+let boton_con = document.getElementById('boton_con');
+let ocultar_con = document.getElementById('ocultar_con');
+boton_con.addEventListener ('click', MostrarCon);
+
+function MostrarCon () {
+    document.getElementById('ocultar_inf').style.display = 'none';
+    document.getElementById('ocultar_exp').style.display = 'none';
+    document.getElementById('ocultar_hab').style.display = 'none';
+    document.getElementById('ocultar_con').style.display = 'block';
 }
 
 consulta_persona ()
